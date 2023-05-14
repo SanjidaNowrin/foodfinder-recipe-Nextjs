@@ -37,7 +37,7 @@ const Details = () => {
       <div className=" grid  grid-cols-1 md:grid-cols-2">
         <div>
           <Image
-            src={recipeDetails.strMealThumb || "image"}
+            src={recipeDetails.strMealThumb || "/"}
             width={500}
             height={500}
             alt="image"
