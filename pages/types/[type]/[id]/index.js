@@ -13,7 +13,7 @@ const getRecipeDetails = async (id) => {
 
 const Details = () => {
   const router = useRouter();
-  const recipeId = router.query.id;
+  const recipeId = router?.query?.id;
 
   const [recipeDetails, setRecipeDetails] = React.useState([]);
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 export default function Header() {
-  const pathname = usePathname().replace("/", "");
+  const pathname = usePathname()?.replace("/", "");
   const currentArea = pathname.split("/")[1];
   const recipeID = pathname.split("/")[2];
   console.log(currentArea);
