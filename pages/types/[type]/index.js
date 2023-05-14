@@ -7,7 +7,7 @@ const getRecipes = async (myParam) => {
     `https://www.themealdb.com/api/json/v1/1/filter.php?a=${myParam}`
   );
   const res = await response.json();
-  return res.meals;
+  return res?.meals;
 };
 
 const Index = () => {
